@@ -1,0 +1,207 @@
+
+Python urllib.request.urlretrieve() Examples
+
+def check_or_download_inception(inception_path):
+    ''' Checks if the path to the inception file is valid, or downloads
+        the file if it is not present. '''
+    INCEPTION_URL = 'http://download.tensorflow.org/models/image/imagenet/inception-2015-12-05.tgz'
+    if inception_path is None:
+        inception_path = '/tmp'
+    inception_path = pathlib.Path(inception_path)
+    model_file = inception_path / 'classify_image_graph_def.pb'
+    if not model_file.exists():
+        print("Downloading Inception model")
+        from urllib import request
+        import tarfile
+        fn, _ = request.urlretrieve(INCEPTION_URL)
+        with tarfile.open(fn, mode='r') as f:
+            f.extract('classify_image_graph_def.pb', str(model_file.parent))
+    return str(model_file) 
+####################################################################################################
+
+
+Python urllib.request.parse_http_list() Examples
+
+def parse_list_header(value):
+    """Parse lists as described by RFC 2068 Section 2.
+
+    In particular, parse comma-separated lists where the elements of
+    the list may include quoted-strings.  A quoted-string could
+    contain a comma.  A non-quoted string could have quotes in the
+    middle.  Quotes are removed automatically after parsing.
+
+    The return value is a standard :class:`list`:
+
+    >>> parse_list_header('token, "quoted value"')
+    ['token', 'quoted value']
+
+    :param value: a string with a list header.
+    :return: :class:`list`
+    """
+    result = []
+    for item in urllib2.parse_http_list(value):
+        if item[:1] == item[-1:] == '"':
+            item = unquote_header_value(item[1:-1])
+        result.append(item)
+    return result 
+####################################################################################################
+
+
+Python urllib.request.HTTPError() Examples
+
+def test_wrong_exception_order(self):
+        tmp = self.mkdtemp()
+        path = os.path.join(tmp, 'xxx')
+        self.write_file(path)
+        dist_files = [('xxx', '2.6', path)]  # command, pyversion, filename
+        self.write_file(self.rc, PYPIRC_LONG_PASSWORD)
+
+        pkg_dir, dist = self.create_dist(dist_files=dist_files)
+        tests = [
+            (OSError('oserror'), 'oserror', OSError),
+            (HTTPError('url', 400, 'httperror', {}, None),
+             'Upload failed (400): httperror', DistutilsError),
+        ]
+        for exception, expected, raised_exception in tests:
+            with self.subTest(exception=type(exception).__name__):
+                with mock.patch('distutils.command.upload.urlopen',
+                                new=mock.Mock(side_effect=exception)):
+                    with self.assertRaises(raised_exception):
+                        cmd = upload(dist)
+                        cmd.ensure_finalized()
+                        cmd.run()
+                    results = self.get_logs(ERROR)
+                    self.assertIn(expected, results[-1])
+                    self.clear_logs() 
+####################################################################################################
+
+
+Python urllib.request.URLError() Examples
+
+def _get_link(self, link):
+        """Return the HTML content of url page as a string """
+        try:
+            logging.debug("Trying to open " + link)
+            res = self.session.open(link)
+        except request.URLError as errno:
+            print("Connection Error: {}".format(errno.reason))
+            return ""
+
+        charset = 'utf-8'
+        info = res.info()
+        try:
+            _, charset = info['Content-Type'].split('charset=')
+        except:
+            pass
+        data = res.read()
+        data = data.decode(charset, 'replace')
+
+        data = htmlentitydecode(data)
+        return data 
+####################################################################################################
+
+
+Python urllib.request.request() Examples
+
+def post_data_to_es(payload, region, creds, host, path, method='POST', proto='https://'):
+        '''Post data to ES endpoint with SigV4 signed http headers'''
+        """
+        Low-level POST data to Amazon Elasticsearch Service generating a Sigv4 signed request
+
+        :param payload:
+        :param region:
+        :param creds:
+        :param host:
+        :param path:
+        :param method:
+        :param proto:
+        :return:
+        """
+        req = AWSRequest(method=method,
+                         url=proto + host + urllib.quote(path),
+                         data=payload,
+                         headers={'Host': host})
+        SigV4Auth(creds, 'es', region).add_auth(req)
+        http_session = BotocoreHTTPSession()
+        res = http_session.send(req.prepare())
+        if 200 <= res.status_code <= 299:
+            return res._content
+        else:
+            raise ESException(res.status_code, res._content) 
+####################################################################################################
+
+
+Python urllib.request.HTTPSHandler() Examples
+
+def get_access_token(self, code, state=None):
+        '''
+        In callback url: http://host/callback?code=123&state=xyz
+        use code and state to get an access token.
+        '''
+        kw = dict(client_id=self._client_id, client_secret=self._client_secret, code=code)
+        if self._redirect_uri:
+            kw['redirect_uri'] = self._redirect_uri
+        if state:
+            kw['state'] = state
+        opener = build_opener(HTTPSHandler)
+        request = Request('https://github.com/login/oauth/access_token', data=_encode_params(kw))
+        request.get_method = _METHOD_MAP['POST']
+        request.add_header('Accept', 'application/json')
+        try:
+            response = opener.open(request, timeout=TIMEOUT)
+            r = _parse_json(response.read())
+            if 'error' in r:
+                raise ApiAuthError(str(r.error))
+            return str(r.access_token)
+        except HTTPError as e:
+            raise ApiAuthError('HTTPError when get access token') 
+####################################################################################################
+
+
+Python urllib.request.add_header() Examples
+
+def requestSpotlight(self):
+		#encode spaces
+		sentence = self.sentence.replace(' ','%20')
+
+		#restrict types to person,organistion and location
+		urlTypes = 'types=DBpedia:Person,Schema:Person,DBpedia:Company,DBpedia:Organisation,Schema:Organization,DBpedia:AdministrativeRegion,DBpedia:PopulatedPlace,DBpedia:Place,Schema:Place'
+		url = "http://spotlight.dbpedia.org/rest/candidates?types="+urlTypes+"&text="+sentence
+		
+		request = urllib.request.Request(url)
+		request.add_header('Accept', 'application/json')
+		response = urllib.request.urlopen(request)
+		responseStr = str(response.read().decode('utf-8'))
+
+		# fetch json from the response
+		jsonStr = json.loads(responseStr)
+
+		#Parse json
+		return(self.parseJson(jsonStr))
+
+	# Entry point of the class 
+####################################################################################################
+
+
+Python urllib.request.HTTPCookieProcessor() Examples
+
+def __init__(self, proxy=None):
+        global USER_AGENT
+        self.redirh = HTTPRedirectHandler()
+        self.cookie = HTTPCookieProcessor()
+        self.rawopen = build_opener(self.redirh, self.cookie)
+        if proxy is None or self.no_proxy:
+            self.opener = self.rawopen
+        elif proxy == 'auto':
+            # proxy.uku.im:8888
+            #self.proxyh = ProxyHandler({'http': "http://211.155.86.25:8888"})
+            #self.proxyh = ProxyHandler({'http': "proxy.uku.im:8888"})
+            self.proxyh = ProxyHandler({'http': "https://secure.uku.im:8443"})
+            #self.proxyh = ProxyHandler({'http': "https://proxy.uku.im:443"})
+            self.opener = build_opener(self.proxyh, self.redirh, self.cookie)
+        else:
+            self.proxyh = ProxyHandler(proxy)
+            self.opener = build_opener(self.proxyh, self.redirh, self.cookie)
+        self.extra_headers = {"User-Agent": USER_AGENT} 
+####################################################################################################
+
