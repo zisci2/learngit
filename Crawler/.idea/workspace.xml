@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4bfe8fcc-f6d5-4dcf-9725-087e543d9920" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dgRj1wPpu9LMk3HPj8Qx2qgeeu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../homework7" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Python\Crawler\spider" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Python\Crawler\spider" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.spider (1)">
+    <configuration name="DataBase" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="E:\Python\Crawler\spider\DataBase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spider/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spider/hello.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="spider (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Spider/spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="spider" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Crawler" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.spider (1)" />
+        <item itemvalue="Python.Main" />
+        <item itemvalue="Python.hello" />
+        <item itemvalue="Python.spider" />
+        <item itemvalue="Python.DataBase" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bfe8fcc-f6d5-4dcf-9725-087e543d9920" name="Default Changelist" comment="" />
+      <created>1592844880854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592844880854</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="3" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592893517495">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="96" y="3" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.689@0.0.1280.689" timestamp="1592893517495" />
+    <state x="391" y="154" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592961048130">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="391" y="154" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.689@0.0.1280.689" timestamp="1592961048130" />
+    <state x="659" y="232" width="303" height="222" key="DBNavigator.ConnectionAuthenticationDialog" timestamp="1592894016707">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="659" y="232" width="303" height="222" key="DBNavigator.ConnectionAuthenticationDialog/0.0.1280.689@0.0.1280.689" timestamp="1592894016707" />
+    <state x="0" y="119" key="DBNavigator.ConnectionInfoDialog" timestamp="1592894829632">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="0" y="119" key="DBNavigator.ConnectionInfoDialog/0.0.1280.689@0.0.1280.689" timestamp="1592894829632" />
+    <state x="371" y="274" key="DBNavigator.CreateRenameConsoleDialog" timestamp="1592897319870">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="371" y="274" key="DBNavigator.CreateRenameConsoleDialog/0.0.1280.689@0.0.1280.689" timestamp="1592897319870" />
+    <state x="411" y="63" key="DBNavigator.DatasetColumnSetupDialog" timestamp="1592896977293">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="411" y="63" key="DBNavigator.DatasetColumnSetupDialog/0.0.1280.689@0.0.1280.689" timestamp="1592896977293" />
+    <state x="381" y="183" key="DBNavigator.DatasetEditorSortingDialog" timestamp="1592897223330">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="381" y="183" key="DBNavigator.DatasetEditorSortingDialog/0.0.1280.689@0.0.1280.689" timestamp="1592897223330" />
+    <state x="376" y="62" key="DBNavigator.DatasetFilterDialog" timestamp="1593014989473">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="376" y="62" key="DBNavigator.DatasetFilterDialog/0.0.1280.689@0.0.1280.689" timestamp="1593014989473" />
+    <state x="386" y="89" key="DBNavigator.ExportDataDialog" timestamp="1592897085085">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="386" y="89" key="DBNavigator.ExportDataDialog/0.0.1280.689@0.0.1280.689" timestamp="1592897085085" />
+    <state x="351" y="33" width="929" height="571" key="DBNavigator.ProjectSettingsDialog" timestamp="1592897602964">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="351" y="33" width="929" height="571" key="DBNavigator.ProjectSettingsDialog/0.0.1280.689@0.0.1280.689" timestamp="1592897602964" />
+    <state x="586" y="95" key="FileChooserDialogImpl" timestamp="1593085325091">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="586" y="95" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1593085325091" />
+    <state width="1259" height="208" key="GridCell.Tab.0.bottom" timestamp="1593099865402">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.0.bottom/0.0.1280.689@0.0.1280.689" timestamp="1593099865402" />
+    <state width="1259" height="208" key="GridCell.Tab.0.center" timestamp="1593099865402">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.0.center/0.0.1280.689@0.0.1280.689" timestamp="1593099865402" />
+    <state width="1259" height="208" key="GridCell.Tab.0.left" timestamp="1593099865402">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.0.left/0.0.1280.689@0.0.1280.689" timestamp="1593099865402" />
+    <state width="1259" height="208" key="GridCell.Tab.0.right" timestamp="1593099865402">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.0.right/0.0.1280.689@0.0.1280.689" timestamp="1593099865402" />
+    <state width="1259" height="208" key="GridCell.Tab.1.bottom" timestamp="1593099865403">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.1.bottom/0.0.1280.689@0.0.1280.689" timestamp="1593099865403" />
+    <state width="1259" height="208" key="GridCell.Tab.1.center" timestamp="1593099865403">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.1.center/0.0.1280.689@0.0.1280.689" timestamp="1593099865403" />
+    <state width="1259" height="208" key="GridCell.Tab.1.left" timestamp="1593099865402">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.1.left/0.0.1280.689@0.0.1280.689" timestamp="1593099865402" />
+    <state width="1259" height="208" key="GridCell.Tab.1.right" timestamp="1593099865403">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="1259" height="208" key="GridCell.Tab.1.right/0.0.1280.689@0.0.1280.689" timestamp="1593099865403" />
+    <state x="288" y="0" key="SettingsEditor" timestamp="1593048830831">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="288" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1593048830831" />
+    <state width="200" height="160" key="TextEditor.name" timestamp="1592897192655">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state width="200" height="160" key="TextEditor.name/0.0.1280.689@0.0.1280.689" timestamp="1592897192655" />
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup" timestamp="1592893408869">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="303" y="10" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1592893408869" />
+  </component>
+</project>
