@@ -57,15 +57,20 @@ def getData(url):
 
             text = soup_test.find_all(text=True)
             final = ''
+            list = []
             blacklist = [
                 '[document]','noscript','header','html','meta','head','input','script',
-                '</a></span>','<a><span>',
+                'label', 'h4', 'ol', '[document]', 'a', 'h1',
+
             ]  #去掉不想要的元素
 
             for t in text:
-                if t.parent.name not in blacklist:
+                # print(t.parent.name )
+                if t not in blacklist:
                     final += '{}'.format(t)
-            return final
+
+            a = re.sub("\\<.*?\\>|\\{.*?}|\\[.*?]", "",final)  #尽量去掉<>,{},[]中的内容
+            return a
 
 
 
@@ -90,15 +95,3 @@ def save(id):
     else:
         SQL.Add("暂未找到", id)
 
-#
-# save(1)
-#
-if __name__ =='__main__':
-    po = Pool(8)
-    for i in range(1,20):
-        po.apply_async(save,(i,))
-
-    print("-----star----")
-    po.close()
-    po.join()
-    print("-----end-----")
